@@ -97,6 +97,26 @@ module.exports = function(environment) {
             // Here you can pass flags/options to your application instance
             // when it is created
         },
+        cedar: {
+            ceeConfig: {
+                showTemplateUpload: false,
+                templateUploadResponseSuccess: 'success',
+                templateUploadBaseUrl: 'https://api-php.cee.metadatacenter.orgx',
+                templateUploadEndpoint: '/upload.php',
+                templateDownloadEndpoint: '/download.php',
+                templateUploadParamName: '3520cf061bba4919a8ea4b74a07af01b',
+                templateDownloadParamName: '9ff482bacac84c499655ab58efdf590a',
+                showDataSaver: false,
+                dataSaverEndpointUrl: 'http://localhost:8000/datasave.php',
+                sampleTemplateLocationPrefix: 'http://localhost:4240/cedar-embeddable-editor-sample-templates/',
+                showSampleTemplateLinks: true,
+                loadSampleTemplateName: '01',
+                terminologyProxyUrl: 'https://api-php.cee.metadatacenter.orgx/index.php',
+            },
+            apiUrl: 'https://open.metadatacenter.org/',
+            cedarUrl: 'https://cedar.metadatacenter.org/',
+            terminologyUrl: 'https://terminology.metadatacenter.org/',
+        },
         moment: {
             includeTimezone: 'all',
             outputFormat: 'YYYY-MM-DD h:mm A z',
