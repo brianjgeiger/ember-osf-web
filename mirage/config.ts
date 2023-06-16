@@ -53,6 +53,7 @@ const { OSF: { apiUrl } } = config;
 export default function(this: Server) {
     this.passthrough(); // pass through all requests on currrent domain
     this.passthrough('https://api.crossref.org/*');
+    this.passthrough('http://localhost:4240/*');
     // SHARE search
     this.urlPrefix = 'https://share.osf.io';
     this.namespace = '/api/v2/';

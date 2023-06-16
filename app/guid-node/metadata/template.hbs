@@ -1,7 +1,7 @@
 <div local-class='container'>
-    <cedar-embeddable-editor 
-        config={{this.cedarConfig}}
-    />
+    <cedar-embeddable-editor config={{this.cedarConfig.ceeConfig}}>
+        
+    </cedar-embeddable-editor>
     <NodeMetadataManager @node={{this.model.taskInstance.value}} as |manager|>
         {{#if manager.isGatheringData}}
             <LoadingIndicator @dark={{true}} />
